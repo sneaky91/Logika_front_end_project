@@ -240,7 +240,7 @@ button, input {
     gap: 20px;
 }
 
-.tour-card, .suggestion-card, .review-card {
+.tour-card, .suggestion-card {
     width: 31%;
 }
 
@@ -397,46 +397,6 @@ button, input {
     font-size: 12px;
 }
 
-/* Відгуки */
-.reviews {
-    padding: 60px 0;
-    background: #29352e;
-}
-
-.rating, .stars {
-    display: flex;
-    align-items: center;
-}
-
-.rating {
-    gap: 8px;
-    font-size: 14px;
-}
-
-.review-card {
-    padding: 22px;
-    border: 1px solid #455247;
-    border-radius: 12px;
-    background: #202a25;
-}
-
-.review-text {
-    font-size: 15px;
-}
-
-.review-author {
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #455247;
-    font-size: 14px;
-}
-
-.review-author p + p {
-    margin-top: 5px;
-    color: #b1bcb0;
-    font-size: 12px;
-}
-
 /* Макет форми */
 .booking {
     padding-top: 60px;
@@ -582,11 +542,11 @@ button, input {
         display: block;
     }
 
-    .section-description, .benefits-heading > p, .rating {
+    .section-description, .benefits-heading > p {
         margin-top: 20px;
     }
 
-    .tour-card, .suggestion-card, .review-card {
+    .tour-card, .suggestion-card {
         width: 100%;
     }
 
