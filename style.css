@@ -1,3 +1,11 @@
+:root {
+    --primary: #000;
+    --secondary: #000;
+    --thirdary: #000;
+    --background: #000;
+    --color: #000;
+}
+
 /* Основні стилі */
 * {
     box-sizing: border-box;
@@ -279,13 +287,17 @@ button, input {
 
 .badge {
     display: block;
-    margin: 12px 18px 0;
+    margin: 12px 18px;
     color: #a8bd99;
     font-size: 12px;
 }
 
 .card-content {
     padding: 18px;
+}
+
+.card-content > p {
+    height: auto;
 }
 
 .tour-card h3 {
@@ -457,7 +469,7 @@ button, input {
 }
 
 .booking-form {
-    margin-top: 15px;
+    padding-top: 30px;
     background: #25352b;
 }
 
