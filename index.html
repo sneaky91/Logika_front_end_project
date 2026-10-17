@@ -2,67 +2,412 @@
 <html lang="uk">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Peak Trails</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#202a25">
+        <title>Peak Trails — авторські тури в Карпати</title>
+        <meta name="description" content="Авторські маршрути Карпатами, малі групи та досвідчені провідники. Знайдіть свою стежку з Peak Trails.">
+        <link rel="icon" type="image/png" href="assets/peak-trails-logo.png">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
         <header class="site-header">
-            <div class="container">
-                <div class="brand" aria-label="Peak Trails brand">
-                    <div class="brand-mark" aria-hidden="true">
-                        <img src="assets/LOG.png" alt="Peak Trails logo">
-                    </div>
+            <div class="container header-content">
+                <a href="index.html" class="brand">
+                    <img src="assets/peak-trails-logo.png" alt="" width="36" height="36">
                     <span>Peak Trails</span>
-                </div>
-
-                <nav class="main-nav" aria-label="Головна навігація">
-                    <a href="#" class="active">Головна</a>
-                    <a href="#">Маршрути</a>
-                    <a href="#">Про нас</a>
+                </a>
+                <nav class="main-nav">
+                    <a href="index.html" class="active">Головна</a>
+                    <a href="trails.html">Маршрути</a>
+                    <a href="about_us.html">Про нас</a>
                 </nav>
-
-                <button class="cta-button" type="button">
-                    <span>Забронювати</span>
-                    <span class="arrow" aria-hidden="true">›</span>
-                </button>
+                <a href="index.html#book" class="button button-small">
+                    Забронювати
+                    <img src="assets/icons/arrow-up-right.svg" alt="" class="icon">
+                </a>
             </div>
         </header>
 
-        <main class="hero">
-            <div class="container hero-inner">
-                <div class="hero-copy">
-                    <div class="eyebrow">— Турова агенція гірських мандрівок</div>
+        <main id="main-content">
 
-                    <h1>Маршрути, з яких хочеться почати</h1>
+            <!-- Головний екран -->
+<section class="container hero">
+                <p class="eyebrow">— Турова агенція гірських мандрівок</p>
+                <h1>Маршрути, з яких хочеться почати</h1>
+                <p class="hero-description">
+                    Ми проводимо людей Карпатами з 2014 року. Авторські маршрути, малі групи і
+                    провідники, які знають кожну стежку наосліп. Ви просто йдете — решту робимо ми.
+                </p>
+                <div class="hero-actions">
+                    <a href="trails.html" class="button">
+                        Обрати маршрут
+                        <img src="assets/icons/arrow-right.svg" alt="" class="icon">
+                    </a>
+                    <a href="about_us.html" class="button button-outline">Як ми працюємо</a>
+                </div>
 
-                    <p>
-                        Ми проводимо людей Карпатами з 2014 року. Авторські маршрути,
-                        малі групи і провідники, які знають кожну стежку наосліп. Ви
-                        просто йдете — решту робимо ми.
-                    </p>
+            </section>
 
-                    <div class="hero-actions">
-                        <button class="primary-btn" >Обрати маршрут <span>→</span></button>
-                        <button class="secondary-btn" >Як ми працюємо</button>
+            <!-- Маршрут тижня -->
+            <section class="container featured">
+                <div class="featured-photo">
+                    <img src="assets/carpathians.jpg" alt="Світанок над хребтами Карпат" width="1920" height="1088">
+                    <div class="featured-caption">
+                        <div>
+                            <p class="eyebrow">Маршрут тижня</p>
+                            <p>Чорногірський хребет · 6 днів</p>
+                        </div>
+                        <a href="#book" class="button button-card">
+                            Хочу сюди
+                            <img src="assets/icons/arrow-right.svg" alt="" class="icon">
+                        </a>
                     </div>
+                </div>
+            </section>
 
-                    <div class="hero-stats">
-                        <div>
-                            <span class="stat-number">12</span>
-                            <span class="stat-label">років у горах</span>
+            <!-- Популярні маршрути -->
+            <section id="routes" class="container popular-routes">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">— Каталог походів</p>
+                        <h2>Куди їдемо цього сезону</h2>
+                    </div>
+                    <p class="section-description">
+                        Від двох днів на полонині до тижневої експедиції. Оберіть свій рівень — далі наша
+                        робота.
+                    </p>
+                </div>
+                <div class="cards-grid">
+                    <div class="tour-card">
+                        <div class="card-photo">
+                            <img src="assets/borzhava.jpg" alt="Полонина Боржава" width="1200" height="800">
+                            <span class="badge">Розминка</span>
                         </div>
-                        <div>
-                            <span class="stat-number">38</span>
-                            <span class="stat-label">маршрутів</span>
+                        <div class="card-content">
+                            <h3>Полонина Боржава</h3>
+                            <p>М'який старт для першого походу: широкі полонини, чорниця під ногами і ночівля в колибі.</p>
+                            <div class="route-meta">
+                                <span>
+                                    <img src="assets/icons/clock.svg" alt="" class="icon">
+                                    2 дні
+                                </span>
+                                <span>
+                                    <img src="assets/icons/route.svg" alt="" class="icon">
+                                    21 км
+                                </span>
+                                <span>
+                                    <img src="assets/icons/trending-up.svg" alt="" class="icon">
+                                    +640 м
+                                </span>
+                                <span class="difficulty">
+                                    <img src="assets/icons/mountain.svg" alt="" class="icon">
+                                    Легкий
+                                </span>
+                            </div>
                         </div>
-                        <div>
-                            <span class="stat-number">4 700+</span>
-                            <span class="stat-label">мандрівників</span>
+                    </div>
+                    <div class="tour-card">
+                        <div class="card-photo">
+                            <img src="assets/nesamovyte.jpg" alt="Озеро Несамовите" width="1200" height="800">
+                            <span class="badge">Вихідного дня</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Озеро Несамовите</h3>
+                            <p>Класика Чорногори: льодовикове озеро, морошка на схилах і найкращі світанки масиву.</p>
+                            <div class="route-meta">
+                                <span>
+                                    <img src="assets/icons/clock.svg" alt="" class="icon">
+                                    2 дні
+                                </span>
+                                <span>
+                                    <img src="assets/icons/route.svg" alt="" class="icon">
+                                    18 км
+                                </span>
+                                <span>
+                                    <img src="assets/icons/trending-up.svg" alt="" class="icon">
+                                    +980 м
+                                </span>
+                                <span class="difficulty">
+                                    <img src="assets/icons/mountain.svg" alt="" class="icon">
+                                    Середній
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-card">
+                        <div class="card-photo">
+                            <img src="assets/marmarosy.jpg" alt="Піп Іван Мармароський" width="1200" height="800">
+                            <span class="badge">Експедиція</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Піп Іван Мармароський</h3>
+                            <p>Дикий масив на кордоні з Румунією: без притулків, з наметами і повним автономним режимом.</p>
+                            <div class="route-meta">
+                                <span>
+                                    <img src="assets/icons/clock.svg" alt="" class="icon">
+                                    4 дні
+                                </span>
+                                <span>
+                                    <img src="assets/icons/route.svg" alt="" class="icon">
+                                    47 км
+                                </span>
+                                <span>
+                                    <img src="assets/icons/trending-up.svg" alt="" class="icon">
+                                    +2 150 м
+                                </span>
+                                <span class="difficulty">
+                                    <img src="assets/icons/mountain.svg" alt="" class="icon">
+                                    Складний
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="all-routes">
+                    <a href="trails.html" class="button button-outline button-small">
+                        Усі маршрути
+                        <img src="assets/icons/arrow-right.svg" alt="" class="icon">
+                    </a>
+                </div>
+            </section>
+
+            <!-- Переваги агенції -->
+            <section id="why" class="benefits">
+                <div class="container">
+                    <div class="benefits-heading">
+                        <div>
+                            <p class="eyebrow">— Розумний похід</p>
+                            <h2>
+                                Менше невідомого.
+                                <br>
+                                Більше гір.
+                            </h2>
+                        </div>
+                        <p>
+                            Похід має бути про гори, а не про логістику. Ми закриваємо все технічне:
+                            трансфер, харчування, спорядження, страховку — щоб ви думали лише про
+                            наступний поворот стежки.
+                        </p>
+                    </div>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="card-number">
+                                <img src="assets/icons/compass.svg" alt="" class="icon">
+                                <span>01</span>
+                            </div>
+                            <h3>Точні онлайн-карти</h3>
+                            <p>
+                                Кожен маршрут пройдений нашими провідниками цього сезону. Треки, водойми
+                                і стоянки — перевірені особисто.
+                            </p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="card-number">
+                                <img src="assets/icons/shield-check.svg" alt="" class="icon">
+                                <span>02</span>
+                            </div>
+                            <h3>Безпека на першому місці</h3>
+                            <p>
+                                Супутниковий зв'язок, аптечки рівня wilderness first aid і план евакуації
+                                для кожної ділянки.
+                            </p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="card-number">
+                                <img src="assets/icons/tent.svg" alt="" class="icon">
+                                <span>03</span>
+                            </div>
+                            <h3>Спорядження включено</h3>
+                            <p>
+                                Намети, килимки, рюкзаки і трекінгові палки — беремо на себе. Вам
+                                лишається взуття і гарний настрій.
+                            </p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="card-number">
+                                <img src="assets/icons/users.svg" alt="" class="icon">
+                                <span>04</span>
+                            </div>
+                            <h3>Малі групи</h3>
+                            <p>
+                                Максимум 10 людей на провідника. Ніхто не відстає, ніхто не чекає — темп
+                                підлаштовуємо під групу.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Підбір маршруту -->
+            <section class="container suggestions">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">— Підбір за темпом</p>
+                        <h2>Обери гори під свій ритм</h2>
+                    </div>
+                    <p class="section-description">
+                        Не знаєте, з чого почати? Скажіть, скільки у вас днів і якого навантаження
+                        хочеться — підберемо маршрут.
+                    </p>
+                </div>
+                <div class="cards-grid">
+                    <a href="#book" class="suggestion-card">
+                        <img src="assets/gorgany.jpg" alt="Ґоргани лайт" width="1200" height="800">
+                        <div class="photo-shade"></div>
+                        <span class="badge">Для новачків</span>
+                        <div class="suggestion-caption">
+                            <div>
+                                <p>Ґоргани лайт</p>
+                                <p>3 дні · 32 км</p>
+                            </div>
+                            <span class="round-arrow">
+                                <img src="assets/icons/arrow-right.svg" alt="" class="icon">
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#book" class="suggestion-card">
+                        <img src="assets/hoverla.jpg" alt="Говерла на світанку" width="1200" height="800">
+                        <div class="photo-shade"></div>
+                        <span class="badge">Класика</span>
+                        <div class="suggestion-caption">
+                            <div>
+                                <p>Говерла на світанку</p>
+                                <p>2 дні · 16 км</p>
+                            </div>
+                            <span class="round-arrow">
+                                <img src="assets/icons/arrow-right.svg" alt="" class="icon">
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#book" class="suggestion-card">
+                        <img src="assets/marmarosy.jpg" alt="Мармароський хребет" width="1200" height="800">
+                        <div class="photo-shade"></div>
+                        <span class="badge">Для досвідчених</span>
+                        <div class="suggestion-caption">
+                            <div>
+                                <p>Мармароський хребет</p>
+                                <p>5 днів · 68 км</p>
+                            </div>
+                            <span class="round-arrow">
+                                <img src="assets/icons/arrow-right.svg" alt="" class="icon">
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Відгуки -->
+            <section id="reviews" class="reviews">
+                <div class="container">
+                    <div class="section-heading">
+                        <div>
+                            <p class="eyebrow">— Відгуки</p>
+                            <h2>Що кажуть після спуску</h2>
+                        </div>
+                        <div class="rating">
+                            <span class="stars">
+                                <img src="assets/icons/star.svg" alt="" class="icon">
+                                <img src="assets/icons/star.svg" alt="" class="icon">
+                                <img src="assets/icons/star.svg" alt="" class="icon">
+                                <img src="assets/icons/star.svg" alt="" class="icon">
+                                <img src="assets/icons/star.svg" alt="" class="icon">
+                            </span>
+                            <span>4,9</span>
+                            <span>· 612 відгуків</span>
+                        </div>
+                    </div>
+                    <div class="cards-grid">
+                        <div class="review-card">
+                            <p class="review-text">
+                                «Йшла з подругою вперше в гори — боялась не витримати. Провідник так
+                                розставив темп, що на Боржаві я ще й бігала за схід сонця фотографувати.»
+                            </p>
+                            <div class="review-author">
+                                <p>Оксана Д.</p>
+                                <p>Полонина Боржава · червень</p>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <p class="review-text">
+                                «Мармароси — це інша планета. Чотири дні без зв'язку, зорі над наметом і
+                                кава на пальнику. Організація на рівні, якого я не бачив ні в кого.»
+                            </p>
+                            <div class="review-author">
+                                <p>Тарас К.</p>
+                                <p>Піп Іван Мармароський · серпень</p>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <p class="review-text">
+                                «Поїхали з чоловіком на Несамовите 'на один раз'. Це був третій наш похід
+                                з Peak Trails за рік. Думаю, все зрозуміло.»
+                            </p>
+                            <div class="review-author">
+                                <p>Ірина і Максим</p>
+                                <p>Озеро Несамовите · вересень</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Форма бронювання -->
+            <section id="book" class="container booking">
+                <div class="booking-panel">
+                    <div class="booking-info">
+                        <p class="eyebrow">— Заявка на тур</p>
+                        <h2>
+                            Гори вже чекають.
+                            <br>
+                            Лишилось написати нам.
+                        </h2>
+                        <p>
+                            Залиште контакти — провідник передзвонить протягом дня, розповість про
+                            найближчі дати і чесно скаже, чи маршрут вам під силу.
+                        </p>
+                        <div class="contacts">
+                            <p>
+                                <img src="assets/icons/map-pin.svg" alt="" class="icon">
+                                Київ, вул. Рейтарська 12
+                            </p>
+                            <p>
+                                <img src="assets/icons/calendar-days.svg" alt="" class="icon">
+                                Відправлення щотижня, квітень — листопад
+                            </p>
+                            <p>
+                                <img src="assets/icons/flame.svg" alt="" class="icon">
+                                hello@peaktrails.ua
+                            </p>
+                        </div>
+                    </div>
+                    <div class="booking-form">
+                        <label for="name">Ім’я та прізвище</label>
+                        <input type="text" id="name" placeholder="Ваше ім’я">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" placeholder="Ваш номер телефону">
+                        <label for="route">Маршрут</label>
+                        <input type="text" id="route" placeholder="Куди хочете піти?">
+                        <button type="button" class="button booking-submit">Надіслати заявку</button>
+                        <p class="booking-note">Це макет форми. Заявка не надсилається.</p>
+                    </div>
+                </div>
+            </section>
         </main>
+
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <a href="index.html" class="brand">
+                    <img src="assets/peak-trails-logo.png" alt="" width="32" height="32">
+                    <span>Peak Trails</span>
+                </a>
+                <nav class="footer-nav">
+                    <a href="index.html" class="active">Головна</a>
+                    <a href="trails.html">Маршрути</a>
+                    <a href="about_us.html">Про нас</a>
+                </nav>
+                <p class="copyright">© 2026 Peak Trails · Карпати</p>
+            </div>
+        </footer>
     </body>
 </html>

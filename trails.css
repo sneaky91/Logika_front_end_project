@@ -1,0 +1,105 @@
+/* Каталог маршрутів */
+.routes-intro {
+    padding-top: 55px;
+    padding-bottom: 40px;
+}
+
+.routes-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.routes-heading h1 {
+    max-width: 550px;
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+.routes-heading p {
+    max-width: 400px;
+    color: #b1bcb0;
+}
+
+.route-catalog {
+    padding-bottom: 60px;
+}
+
+.catalog-note {
+    margin-bottom: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #455247;
+    color: #b1bcb0;
+}
+
+.route-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 25px 20px;
+}
+
+.route-card {
+    width: 31%;
+}
+
+.card-content .route-level {
+    color: #a8bd99;
+    font-size: 12px;
+}
+
+.route-card h2 {
+    margin: 10px 0;
+    font-size: 28px;
+}
+
+.route-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #a6b895;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+/* Допомога з вибором */
+.route-help {
+    padding: 50px 0;
+    background: #16221b;
+}
+
+.route-help .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.route-help h2 {
+    font-size: 34px;
+}
+
+.route-help h2 + p {
+    max-width: 530px;
+    margin-top: 15px;
+    color: #b0bead;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+    .routes-heading, .route-help .container {
+        display: block;
+    }
+
+    .routes-heading h1 {
+        font-size: 42px;
+    }
+
+    .routes-heading p, .route-help .button {
+        margin-top: 20px;
+    }
+
+    .route-card {
+        width: 100%;
+    }
+}
