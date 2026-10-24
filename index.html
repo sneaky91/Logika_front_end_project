@@ -7,7 +7,7 @@
         <title>Peak Trails — авторські тури в Карпати</title>
         <meta name="description" content="Авторські маршрути Карпатами, малі групи та досвідчені провідники. Знайдіть свою стежку з Peak Trails.">
         <link rel="icon" type="image/png" href="assets/peak-trails-logo.png">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="src/css/style.css">
     </head>
     <body>
 
@@ -19,13 +19,19 @@
                 </a>
                 <nav class="main-nav">
                     <a href="index.html" class="active">Головна</a>
-                    <a href="trails.html">Маршрути</a>
-                    <a href="about_us.html">Про нас</a>
+                    <a href="src/html/trails.html">Маршрути</a>
+                    <a href="src/html/about_us.html">Про нас</a>
                 </nav>
                 <a href="index.html#book" class="button button-small">
                     Забронювати
                     <img src="assets/icons/arrow-up-right.svg" alt="" class="icon">
                 </a>
+                <select class="Language_switch" name="language" aria-label="Мова">
+                    <option value="uk" lang="uk" selected>Українська</option>
+                    <option value="it" lang="it">Italiano</option>
+                    <option value="sk" lang="sk">Slovenčina</option>
+                    <option value="en" lang="en">English</option>
+                </select>
             </div>
         </header>
 
@@ -40,11 +46,11 @@
                     провідники, які знають кожну стежку наосліп. Ви просто йдете — решту робимо ми.
                 </p>
                 <div class="hero-actions">
-                    <a href="trails.html" class="button">
+                    <a href="src/html/trails.html" class="button">
                         Обрати маршрут
                         <img src="assets/icons/arrow-right.svg" alt="" class="icon">
                     </a>
-                    <a href="about_us.html" class="button button-outline">Як ми працюємо</a>
+                    <a href="src/html/about_us.html" class="button button-outline">Як ми працюємо</a>
                 </div>
 
             </section>
@@ -99,7 +105,7 @@
                     </div>
                 </div>
                 <div class="all-routes">
-                    <a href="trails.html" class="button button-outline button-small">
+                    <a href="src/html/trails.html" class="button button-outline button-small">
                         Усі маршрути
                         <img src="assets/icons/arrow-right.svg" alt="" class="icon">
                     </a>
@@ -260,14 +266,63 @@
                             </p>
                         </div>
                     </div>
-                    <form class="booking-form">
-                        <label for="name">Ім’я та прізвище</label><input type="text" id="name" placeholder="Ваше ім’я">
-                        <label for="phone">Телефон</label><input type="tel" id="phone" placeholder="Ваш номер телефону">
-                        <label for="route">Маршрут</label><input type="text" id="route" placeholder="Куди хочете піти?">
-                        <button type="button" class="button booking-submit">Надіслати заявку</button>
-                        <p class="booking-note">Це макет форми. Заявка не надсилається.</p>
-                    </form>
-                </div>
+
+
+<form class="booking-form" novalidate>
+
+    <!-- Ім'я та прізвище -->
+    <div class="form-group">
+        <label for="name">Ім'я та прізвище</label>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Ваше ім'я та прізвище"
+            autocomplete="name"
+        >
+
+        <small class="error" id="name-error"></small>
+    </div>
+
+    <!-- Номер телефону -->
+    <div class="form-group">
+        <label for="phone">Телефон</label>
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="+380991234567"
+            autocomplete="tel"
+        >
+
+        <small class="error" id="phone-error"></small>
+    </div>
+
+    <!-- Маршрут -->
+    <div class="form-group">
+        <label for="route">Маршрут</label>
+
+        <textarea
+            id="route"
+            placeholder="Куди хочете піти?"
+            rows="4"
+        ></textarea>
+
+        <small class="error" id="route-error"></small>
+    </div>
+
+    <!-- Кнопка -->
+    <button type="submit" class="button booking-submit">
+        Надіслати заявку
+    </button>
+
+    <p class="booking-note">
+        Демонстраційна форма. Дані не надсилаються на сервер.
+    </p>
+
+</form>
+
+
             </section>
         </main>
 
@@ -279,12 +334,14 @@
                 </a>
                 <nav class="footer-nav">
                     <a href="index.html" class="active">Головна</a>
-                    <a href="trails.html">Маршрути</a>
-                    <a href="about_us.html">Про нас</a>
+                    <a href="src/html/trails.html">Маршрути</a>
+                    <a href="src/html/about_us.html">Про нас</a>
                 </nav>
                 <p class="copyright">© 2026 Peak Trails · Карпати</p>
             </div>
         </footer>
-        <script src="main.js"></script>
+        <script src="src/js/translations.js"></script>
+        <script src="src/js/i18n.js"></script>
+        <script src="src/js/Home.js"></script>
     </body>
 </html>

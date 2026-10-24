@@ -20,11 +20,15 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     margin: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: Georgia, serif;
     font-weight: normal;
 }
@@ -44,7 +48,9 @@ img {
     max-width: 100%;
 }
 
-button, input {
+button,
+input,
+textarea {
     font-family: Arial, sans-serif;
     font-size: 15px;
 }
@@ -85,7 +91,7 @@ button, input {
 
 .button:disabled {
     color: #a6b895;
-    background: #a6b89500;
+    background: transparent;
 }
 
 .button:hover {
@@ -116,6 +122,8 @@ button, input {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
     padding-top: 18px;
     padding-bottom: 18px;
 }
@@ -125,6 +133,26 @@ button, input {
     align-items: center;
     gap: 10px;
     font-weight: bold;
+}
+
+.Language_switch {
+    padding: 9px 12px;
+    border: 1px solid #59685b;
+    border-radius: 7px;
+    background: #29352e;
+    color: #e0e4d9;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.Language_switch:hover {
+    background: #3b4c3f;
+}
+
+.Language_switch:focus-visible {
+    outline: 2px solid #a6b895;
+    outline-offset: 2px;
 }
 
 .brand img {
@@ -137,14 +165,17 @@ button, input {
     display: flex;
     gap: 30px;
     margin-top: 7px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
-.main-nav a, .footer-nav a {
+.main-nav a,
+.footer-nav a {
     color: #b1bcb0;
 }
 
-.main-nav a:hover, .footer-nav a:hover, .main-nav .active {
+.main-nav a:hover,
+.footer-nav a:hover,
+.main-nav .active {
     color: #e0e4d9;
     text-decoration: underline;
 }
@@ -228,7 +259,8 @@ button, input {
 }
 
 /* Картки маршрутів */
-.popular-routes, .suggestions {
+.popular-routes,
+.suggestions {
     padding-top: 50px;
     padding-bottom: 60px;
 }
@@ -270,7 +302,8 @@ button, input {
     gap: 20px;
 }
 
-.tour-card, .suggestion-card {
+.tour-card,
+.suggestion-card {
     width: 31%;
 }
 
@@ -304,6 +337,8 @@ button, input {
 
 .card-content > p {
     height: auto;
+    color: #b1bcb0;
+    font-size: 14px;
 }
 
 .tour-card h3 {
@@ -324,11 +359,6 @@ button, input {
 
 .tour-details {
     margin-top: 15px;
-}
-
-.card-content > p {
-    color: #b1bcb0;
-    font-size: 14px;
 }
 
 .route-meta {
@@ -451,8 +481,10 @@ button, input {
     background: #16221b;
 }
 
-.booking-info, .booking-form {
+.booking-info,
+.booking-form {
     width: 50%;
+    min-width: 0;
     padding: 35px;
 }
 
@@ -486,17 +518,71 @@ button, input {
     font-size: 14px;
 }
 
-.booking-form input {
+/* Спільне оформлення імені, телефону та маршруту */
+.booking-form input,
+.booking-form textarea {
+    display: block;
+    box-sizing: border-box;
     width: 100%;
+    max-width: 100%;
     padding: 12px;
     border: 1px solid #59685b;
     border-radius: 7px;
     background: #202a25;
     color: #e0e4d9;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
 }
 
-.booking-form input::placeholder {
+/* Додаткове оформлення поля «Маршрут» */
+.booking-form textarea {
+    min-height: 110px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
     color: #b1bcb0;
+    opacity: 1;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+    outline: 2px solid #a6b895;
+    outline-offset: 2px;
+}
+
+/* Повідомлення під полями */
+.booking-form .error {
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.booking-form .error:empty {
+    display: none;
+}
+
+/* Неправильне значення */
+.booking-form .error.is-invalid {
+    color: #ff9696;
+}
+
+.booking-form input.is-invalid,
+.booking-form textarea.is-invalid {
+    border-color: #ff9696;
+}
+
+/* Правильне значення */
+.booking-form .error.is-valid {
+    color: #9de2ae;
+}
+
+.booking-form input.is-valid,
+.booking-form textarea.is-valid {
+    border-color: #9de2ae;
 }
 
 .booking-submit {
@@ -504,7 +590,6 @@ button, input {
     margin-top: 25px;
     border-radius: 7px;
 }
-
 
 .booking-note {
     margin-top: 12px;
@@ -580,15 +665,18 @@ button, input {
         font-size: 23px;
     }
 
-    .section-heading, .benefits-heading {
+    .section-heading,
+    .benefits-heading {
         display: block;
     }
 
-    .section-description, .benefits-heading > p {
+    .section-description,
+    .benefits-heading > p {
         margin-top: 20px;
     }
 
-    .tour-card, .suggestion-card {
+    .tour-card,
+    .suggestion-card {
         width: 100%;
     }
 
@@ -600,7 +688,8 @@ button, input {
         display: block;
     }
 
-    .booking-info, .booking-form {
+    .booking-info,
+    .booking-form {
         width: 100%;
         padding: 25px;
     }
