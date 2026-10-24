@@ -7,7 +7,6 @@
     const attributes = [];
     let language = "uk";
 
-    // Save original text nodes to preserve icons, line breaks and layout.
     const walker = document.createTreeWalker(document.documentElement, NodeFilter.SHOW_TEXT);
     while (walker.nextNode()) {
         const node = walker.currentNode;
@@ -41,11 +40,11 @@
         document.querySelectorAll(".Language_switch").forEach(select => {
             select.value = language;
         });
-        // Some browser privacy settings disable local storage.
+
         try {
             localStorage.setItem(storageKey, language);
         } catch {
-            // Switching remains available on the current page.
+
         }
     }
 
