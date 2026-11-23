@@ -143,9 +143,8 @@ form.addEventListener("submit", function (event) {
     nameInput.value = capitalizeName(cleanSpaces(nameInput.value));
     phoneInput.value = phoneInput.value.replace(/\s+/g, "");
 
-    if (typeof gtag === "function") {
-        gtag("event", "booking_submit");
-    }
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: "booking_submit" });
 
     note.textContent =
         "✓ Усі поля заповнені правильно. форма: дані надіслано.";
